@@ -1,7 +1,8 @@
 {
   "name": "ctrl-v-sound-effect",
   "displayName": "ctrl+v sound effect",
-  "description": "for fun",
+  "description": "Plays a fun sound effect whenever you paste text (Ctrl+V) in VS Code.",
+  "publisher": "rishank-sharma",
   "version": "0.0.1",
   "engines": {
     "vscode": "^1.109.0"
@@ -13,10 +14,6 @@
   "main": "./extension.js",
   "contributes": {
     "commands": [
-      {
-        "command": "ctrl-v.playSound",
-        "title": "Play Sound Effect"
-      }
     ]
   },
   "scripts": {
@@ -31,8 +28,5 @@
     "@vscode/test-cli": "^0.0.12",
     "@vscode/test-electron": "^2.5.2",
     "eslint": "^9.39.2"
-  },
-  "dependencies": {
-    "play-sound": "^1.1.6"
   }
 }
