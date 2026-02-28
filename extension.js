@@ -61,8 +61,8 @@ function activate(context) {
 		if (
 			change.text &&
 			clipboardText &&
-			change.text.length > 0 &&
-			clipboardText.includes(change.text)
+			change.text.length > 15 &&
+			clipboardText === change.text
 		) {
 			console.log('Detected paste action, playing sound effect.');
 			lastPlayed = now;
